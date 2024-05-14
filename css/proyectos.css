@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 900px;
+    grid-template-areas:
+        "header header header"
+        "main main main";
+
+    background-color: #000000;
+}
+
+.header {
+    grid-area: header;
+
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.video-contenedorpro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1900px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.video-contenedorpro video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.buttonh,
+.buttonh2 {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonh:hover {
+    background-color: #fff;
+    color: blueviolet;
+}
+
+.buttonh2:hover {
+    background-color: #fff;
+    color: blueviolet;
+}
+
+.buttonh {
+    position: relative;
+    top: -20px;
+    left: 720px;
+    font-family: "Jaro", sans-serif;
+}
+
+.buttonh2 {
+    position: relative;
+    top: -55px;
+    left: 840px;
+    font-family: "Jaro", sans-serif;
+}
+
+.main {
+    grid-area: main;
+    background-color: black;
+    position: relative;
+    top: 1px;
+}
+
+.video-container4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1900px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.video-container4 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.search-container {
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    left: 750px;
+    display: inline-block;
+    font-family: "Jaro", sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+#searchInput {
+    font-size: 32px;
+    border-radius: 20px;
+    font-family: "Jaro", sans-serif;
+}
+
+.search-container button {
+    font-family: "Jaro", sans-serif;
+    position: relative;
+    top: 50px;
+    left: -210px;
+    border: 0;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: white;
+    color: black;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 300px;
+}
+
+.proyecto1,
+.proyecto2,
+.proyecto3 {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: bounce 1s infinite;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.video-contenedorpro2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-contenedorpro2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.proyecto1:hover,
+.proyecto2:hover,
+.proyecto3:hover {
+    transform: translateY(-10px);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.imagenes img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.1);
+}
+
+.botones button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Jaro", sans-serif;
+}
+
+.botones button:hover {
+    background-color: white;
+    color: #000000;
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        background-color: #000000;
+    }
+
+    .header {
+        grid-area: header;
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        top: -7px;
+        height: 4px;
+    }
+
+    .video-contenedorpro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        height: 60px;
+
+        overflow: hidden;
+    }
+
+    .video-contenedorpro video {
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 1366px;
+
+        height: 60px;
+    }
+
+    .buttonh {
+        position: relative;
+        top: -30px;
+        left: 450px;
+        font-family: "Jaro", sans-serif;
+    }
+
+    .buttonh2 {
+        position: relative;
+        top: -73px;
+        left: 540px;
+        font-family: "Jaro", sans-serif;
+    }
+
+    .buttonh,
+    .buttonh2 {
+        padding: 8px 16px;
+        background-color: blueviolet;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .buttonh:hover,
+    .buttonh2:hover {
+        background-color: #fff;
+        color: blueviolet;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: black;
+        position: relative;
+        top: 1px;
+    }
+
+    .video-container4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+    }
+
+    .video-container4 video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .search-container {
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+        left: 480px;
+        display: inline-block;
+        font-family: "Jaro", sans-serif;
+        font-size: 60px;
+        margin-bottom: 20px;
+        animation: bounce 1s infinite;
+    }
+
+    .botones button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        margin: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: "Jaro", sans-serif;
+    }
+}

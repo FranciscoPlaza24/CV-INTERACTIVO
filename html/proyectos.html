@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/proyectos.css" />
+    <title>proyects</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="video-contenedorpro">
+        <video autoplay muted loop>
+          <source src="../IMAGENES/header.1900.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"><button class="buttonh">home</button></a>
+          </li>
+          <li>
+            <a href="https://wa.me/541155675493"
+              ><button class="buttonh2">contact</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="video-container4">
+        <video autoplay muted loop>
+          <source src="../IMAGENES/main2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="search JavaScript, React o Angular..."
+        />
+        <button onclick="buscarProyecto()">search</button>
+      </div>
+
+      <section class="proyectos">
+        <section class="proyecto1" id="proyecto1">
+          <div class="video-contenedorpro2">
+            <video autoplay muted loop>
+              <source src="../IMAGENES/fondo proyectos.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="imagenes">
+            <img
+              src="../IMAGENES/Captura de pantalla 2024-05-10 133641.png"
+              alt="Proyecto 1"
+            />
+            <img src="proyecto1_2.jpg" alt="Proyecto 1" />
+            <img src="proyecto1_3.jpg" alt="Proyecto 1" />
+          </div>
+          <div class="botones">
+            <button
+              onclick="window.location.href='https://franciscoplaza24.github.io/Interactive-portfolio/index.html'"
+            >
+              Link 1
+            </button>
+            <button onclick="window.location.href='url_proyecto1_2'">
+              Link 2
+            </button>
+            <button onclick="window.location.href='url_proyecto1_3'">
+              Link 3
+            </button>
+          </div>
+        </section>
+        <section class="proyecto2" id="proyecto2">
+          <div class="video-contenedorpro2">
+            <video autoplay muted loop>
+              <source src="../IMAGENES/fondo proyectos.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="imagenes">
+            <img src="proyecto2_1.jpg" alt="Proyecto 2" />
+            <img src="proyecto2_2.jpg" alt="Proyecto 2" />
+            <img src="proyecto2_3.jpg" alt="Proyecto 2" />
+          </div>
+          <div class="botones">
+            <button onclick="window.location.href='url_proyecto2_1'">
+              Link 1
+            </button>
+            <button onclick="window.location.href='url_proyecto2_2'">
+              Link 2
+            </button>
+            <button onclick="window.location.href='url_proyecto2_3'">
+              Link 3
+            </button>
+          </div>
+        </section>
+        <section class="proyecto3" id="proyecto3">
+          <div class="video-contenedorpro2">
+            <video autoplay muted loop>
+              <source src="../IMAGENES/fondo proyectos.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="imagenes">
+            <img src="proyecto3_1.jpg" alt="Proyecto 3" />
+            <img src="proyecto3_2.jpg" alt="Proyecto 3" />
+            <img src="proyecto3_3.jpg" alt="Proyecto 3" />
+          </div>
+          <div class="botones">
+            <button onclick="window.location.href='url_proyecto3_1'">
+              Link 1
+            </button>
+            <button onclick="window.location.href='url_proyecto3_2'">
+              Link 2
+            </button>
+            <button onclick="window.location.href='url_proyecto3_3'">
+              Link 3
+            </button>
+          </div>
+        </section>
+      </section>
+    </div>
+    <div class="footer"></div>
+    <script src="../javascript/proyectos.js"></script>
+  </body>
+</html>

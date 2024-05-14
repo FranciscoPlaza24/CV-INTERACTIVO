@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 900px;
+
+    grid-template-areas:
+        "header header header"
+        "main main main";
+}
+
+.header {
+    grid-area: header;
+
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.video-contenedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1900px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.video-contenedor video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.buttonh,
+.buttonh2 {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonh:hover {
+    background-color: #fff;
+    color: blueviolet;
+}
+
+.buttonh2:hover {
+    background-color: #fff;
+    color: blueviolet;
+}
+
+.buttonh {
+    position: relative;
+    top: -20px;
+    left: 720px;
+    font-family: "Jaro", sans-serif;
+}
+
+.buttonh2 {
+    position: relative;
+    top: -55px;
+    left: 840px;
+    font-family: "Jaro", sans-serif;
+}
+
+.main {
+    grid-area: main;
+    background-color: black;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.abautme1 {
+    font-family: "Jaro", sans-serif;
+    margin: 20px 0;
+    font-size: 44px;
+    position: relative;
+    left: -600px;
+    color: white;
+}
+
+@keyframes moveEffect {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.moving {
+    animation: moveEffect 0.5s infinite;
+}
+
+.abautme1 {
+    margin: 20px 0;
+    font-size: 44px;
+    color: white;
+    position: relative;
+    left: -340px;
+    top: 30px;
+}
+
+.about-text {
+    position: relative;
+    left: -40px;
+    top: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    font-size: 22px;
+    color: white;
+    column-count: 2;
+    column-gap: 20px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.imagen1 {
+    position: relative;
+    top: -20px;
+    left: 50px;
+    width: 570px;
+    height: 608px;
+    display: inline-block;
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        background-color: #000000;
+    }
+
+    .header {
+        grid-area: header;
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        top: -7px;
+        height: 4px;
+    }
+
+    .video-contenedor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        height: 60px;
+
+        overflow: hidden;
+    }
+
+    .video-contenedor video {
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 1366px;
+
+        height: 60px;
+    }
+
+    .buttonh {
+        position: relative;
+        top: -30px;
+        left: 450px;
+        font-family: "Jaro", sans-serif;
+    }
+
+    .buttonh2 {
+        position: relative;
+        top: -73px;
+        left: 540px;
+        font-family: "Jaro", sans-serif;
+    }
+
+    .buttonh,
+    .buttonh2 {
+        padding: 8px 16px;
+        background-color: blueviolet;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .buttonh:hover,
+    .buttonh2:hover {
+        background-color: #fff;
+        color: blueviolet;
+    }
+
+    .main {
+        height: 600px;
+        grid-area: main;
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .abautme1 {
+        margin: 20px 0;
+        font-size: 32px;
+        color: white;
+
+        position: relative;
+        left: -250px;
+        top: 5px;
+    }
+
+    .about-text {
+        position: relative;
+        left: -50px;
+        top: 10px;
+
+        margin: 0 auto;
+        padding: 20px;
+        width: 50%;
+        font-size: 15px;
+        color: white;
+        column-count: 2;
+
+        column-gap: 20px;
+
+        display: inline-block;
+        text-align: justify;
+    }
+
+    .imagen1 {
+        position: relative;
+        top: -10px;
+        left: 50px;
+        width: 363px;
+        height: 408px;
+        display: inline-block;
+    }
+}
