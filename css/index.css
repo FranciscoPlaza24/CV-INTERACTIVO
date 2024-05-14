@@ -279,3 +279,63 @@ body {
         display: inline-block;
     }
 }
+
+
+@media (min-width:1980px) and (max-width:2160px) {
+    .header {
+        grid-area: header;
+
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align: center;
+        background-color: #000000;
+    }
+
+    .video-contenedor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1980px;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    .video-contenedor video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+
+}
+
+
+@media (min-width:2160px) and (max-width: 3840px) {
+    .header {
+        grid-area: header;
+
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align: center;
+        background-color: #000000;
+    }
+
+    .video-contenedor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2160px;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    .video-contenedor video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
